@@ -13,13 +13,13 @@ $year = array("2012", "396", "300","2000", "1100", "1089");
 echo "The value of \$year: ";
 print_r($year);
 {
-echo "<br> <br>1. Replaced '-' with '/' in date : <br>";
+echo "<br> <br>2. Replaced '-' with '/' in date : <br>";
 $date1 = str_replace("-", "/","$date");
 echo "The value of \$date: ".$date1."<br>";
 echo "<br>";
 }
 {
-echo "2.To compare date & tar : ";
+echo "3.To compare date & tar : ";
 if (strcmp($date1, $tar) > 0)
 echo "<br>Future<br><br>";
 elseif (strcmp($date1, $tar) < 0)
@@ -27,7 +27,7 @@ echo "<br>Past";
 else echo "<br> oops";
 }
 
-echo "3. print the position of / in date : <br>";
+echo "4. print the position of / in date : <br>";
 for($i=0;$i<strlen($date1);$i++)
 {
 if($date1[$i]=='/')
@@ -38,26 +38,32 @@ echo " ".$i;
 
 
 {
-echo "<br><br>4. Number of words in date : ";
+echo "<br><br>5. Number of words in date : ";
 
 echo "<br>" .str_word_count($date);
 }
 
+echo "<br>";
+
 {
-	echo "<br>5. Finding the length of the sentence : <br>";
+echo "<br>6. Finding the length of the sentence : <br>";
 echo "<br>The sentence is : Welcome to the php "."<br>";
-echo "The length of the above sentence is:";
+echo "The length of the sentence is:";
 echo strlen($word)."<br>";
 }
+
 {
-echo "<br>6. ASCII value of first character of above underlined sentence is";
+echo "<br>7. ASCII value of first character of the sentence is";
 echo "<br>" .ord ($word)."<br>";
 }
+
+
 {
-echo "<br>7. To return the last two charcters of date";
+echo "<br>8. Return the last two charcters of date";
 echo "<br>".substr("$date", -2);
 }
-echo "<br> 8.Convert date into array & delimit '/' it with space<br>";
+
+echo "<br> 9.Convert date into array & delimit '/' it with space<br>";
 $dateElements=explode("/",$date1);
 for($i=0;$i<count($dateElements);$i++)
 {
@@ -71,7 +77,7 @@ findLeapYearwhile($year);
 
 function findLeapYearforeach($year)
 {
-echo "<br>9. Done with FOREACH function";
+echo "<br>10. Done with FOREACH function";
 foreach($year as $value)
 {
 if(((int)$value)%4==0)
