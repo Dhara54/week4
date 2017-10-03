@@ -13,7 +13,7 @@ $year = array("2012", "396", "300","2000", "1100", "1089");
 echo "The value of \$year: ";
 print_r($year);
 {
-echo "<br> <br>1. Replaced '-' with '/' in date <br>";
+echo "<br> <br>1. Replaced '-' with '/' in date : <br>";
 $date1 = str_replace("-", "/","$date");
 echo "The value of \$date: ".$date1."<br>";
 echo "<br>";
@@ -27,7 +27,7 @@ echo "<br>Past";
 else echo "<br> oops";
 }
 
-echo "3. print the position of / in date <br>";
+echo "3. print the position of / in date : <br>";
 for($i=0;$i<strlen($date1);$i++)
 {
 if($date1[$i]=='/')
@@ -42,9 +42,11 @@ echo "<br><br>4. Number of words in date : ";
 
 echo "<br>" .str_word_count($date);
 }
+
 {
-echo "<br><br>#<u> Hye it has been a long time that i saw you</u>"."<br>";
-echo "5.The length of the above sentence is:";
+	echo "<br>5. Finding the length of the sentence : <br>";
+echo "<br>The sentence is : Welcome to the php "."<br>";
+echo "The length of the above sentence is:";
 echo strlen($word)."<br>";
 }
 {
