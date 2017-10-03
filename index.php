@@ -2,6 +2,7 @@
 
 
 $date = date('Y-m-d', time());
+$obj = myclass;
 
 $word = "Welcome to the php";
 
@@ -21,11 +22,14 @@ echo "<br>";
 {
 echo "2.To compare date & tar and print accordingly";
 if (strcmp($date1, $tar) > 0)
-echo "<br> The future<br><br>";
+echo "<br>Future<br><br>";
 elseif (strcmp($date1, $tar) < 0)
-echo "<br> the past";
+echo "<br>Past";
 else echo "<br> oops";
 }
+
+Class myclass
+{
 echo "3. print the position of / in date <br>";
 for($i=0;$i<strlen($date1);$i++)
 {
@@ -34,6 +38,8 @@ if($date1[$i]=='/')
 echo " ".$i;
 }
 }
+}
+
 {
 echo "<br><br>4.To print number of words in date and print it";
 
