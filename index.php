@@ -38,6 +38,7 @@ if($date1[$i]=='/')
 echo " ".$i;
 }
 }
+var_dump($obj);
 }
 
 {
