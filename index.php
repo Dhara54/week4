@@ -1,9 +1,11 @@
 <?php
-$date = date('Y-m-d', time());
-print_r($date);
-$word = "hi it has been a high time that i see you";
 
-echo "The value of \$date: ".$date."<br>";
+
+$date = date('Y-m-d', time());
+
+$word = "Welcome to the php";
+
+echo "<br>The value of \$date: ".$date."<br>";
 
 $tar = "2017/05/24";
 echo "The value of \$tar: ".$tar."<br>";
@@ -60,6 +62,8 @@ echo "<br>";
 
 findLeapYearforeach($year);
 findLeapYearwhile($year);
+
+
 function findLeapYearforeach($year)
 {
 echo "<br>9. Done with FOREACH function";
