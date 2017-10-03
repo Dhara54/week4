@@ -62,6 +62,7 @@ echo "<br>" .ord ($word)."<br>";
 echo "<br>8. Return the last two charcters of date";
 echo "<br>".substr("$date", -2);
 }
+echo "<br>";
 
 echo "<br> 9.Convert date into array & delimit '/' it with space<br>";
 $dateElements=explode("/",$date1);
@@ -77,7 +78,7 @@ findLeapYearwhile($year);
 
 function findLeapYearforeach($year)
 {
-echo "<br>10. Done with FOREACH function";
+echo "<br>10(A). Using FOREACH function";
 foreach($year as $value)
 {
 if(((int)$value)%4==0)
@@ -93,9 +94,10 @@ echo "<br>";
 }
 }
 
+
 function findLeapYearwhile($year)
 {
-echo "<br>10.Done with WHILE function";
+echo "<br>10(B). Using WHILE function";
 $i=0;
 while($i<count($year))
 
