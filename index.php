@@ -2,7 +2,8 @@
 
 
 $date = date('Y-m-d', time());
-
+$obj = myclass;
+var_dump($obj);
 
 $word = "Welcome to the php";
 
@@ -39,8 +40,7 @@ echo " ".$i;
 }
 }
 }
-$obj = myclass;
-var_dump($obj);
+
 
 
 {
