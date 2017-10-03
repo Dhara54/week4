@@ -38,8 +38,8 @@ if($date1[$i]=='/')
 echo " ".$i;
 }
 }
-var_dump($obj);
 }
+var_dump($obj);
 
 {
 echo "<br><br>4.To print number of words in date and print it";
