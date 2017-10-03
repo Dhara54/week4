@@ -2,7 +2,7 @@
 
 
 $date = date('Y-m-d', time());
-$obj = myclass;
+
 
 $word = "Welcome to the php";
 
@@ -39,7 +39,9 @@ echo " ".$i;
 }
 }
 }
+$obj = myclass;
 var_dump($obj);
+
 
 {
 echo "<br><br>4.To print number of words in date and print it";
